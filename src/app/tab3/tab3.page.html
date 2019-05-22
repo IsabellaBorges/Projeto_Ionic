@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-card>
+    <ion-card-header>
+      Contatos
+    </ion-card-header>
+  
+  </ion-card>
 <ion-content></ion-content>
+<ion-list>
+   
+<ion-list *ngFor="let contato of contatos">
+    <ion-avatar>
+        <img src= "{{ contato.img }}"/>
+    </ion-avatar>
+    <ion-item>
+      <ion-label>{{ contato.nome }}</ion-label>
+       <ion-label>{{ contato.msg }}</ion-label>
+    </ion-item>
+  </ion-list>
