@@ -12,13 +12,7 @@ export class Tab1Page {
   constructor (public navCtrl:NavController) {
   }
 
-    public teste ():void{
-      alert('Funcionou')
-    }
-    ngOnInit(){
-      this.teste();
-      
-    }
+    
   }
  
 
