@@ -20,17 +20,17 @@ export class Tab3Page {
   
     {
      "nome":"Lucas",
-      "img":"https://icon-icons.com/icons2/582/PNG/64/superman_icon-icons.com_55033.png",
+      "img":"https://icon-icons.com/icons2/582/PNG/48/superman_icon-icons.com_55033.png",
       "msg":"Olá!"
     },
     {
       "nome":"Tadeu",
-      "img":"https://icon-icons.com/icons2/1736/PNG/64/4043232-avatar-batman-comics-hero_113278.png",
+      "img":"https://icon-icons.com/icons2/1736/PNG/48/4043232-avatar-batman-comics-hero_113278.png",
       "msg":"Boa Noite"
     },
     {
       "nome":"Ana",
-      "img":"https://icon-icons.com/icons2/582/PNG/64/wonder-women_icon-icons.com_55030.png",
+      "img":"https://icon-icons.com/icons2/582/PNG/48/wonder-women_icon-icons.com_55030.png",
       "msg":"Tudo bem?"  
     
     },

@@ -1,6 +1,9 @@
 import { NavController } from '@ionic/angular';
 import { Component } from '@angular/core';
 import { MovieProviderService } from '../movie-provider.service';
+import { NavigationExtras } from '@angular/router';
+
+
 
 @Component ({
   selector: 'app-feed',
@@ -30,6 +33,14 @@ export class FeedPage {
     }
     )
   }
+      MotraDetalhes(filme){
+        console.log(filme);
+        let param:NavigationExtras={queryParams:{id: filme.id,title:filme.title}}
+        this.navCtrl.navigateForward(["movie-detail"],param);
+
+      }
+
+  }
 
 
-}
+

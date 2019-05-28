@@ -18,7 +18,9 @@ export class MovieProviderService {
   return this.getMovie("popular");
     
   }
-  
+  public getMovieDetail(idFilme:string){
+    return this.getMovie(idFilme);
+  }
   public getMovie(url:string){
 
   return this.http.get(this.baseURL+url+this.getApiKey());
