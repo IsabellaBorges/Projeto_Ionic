@@ -4,7 +4,6 @@ import { MovieProviderService } from '../movie-provider.service';
 import { NavigationExtras } from '@angular/router';
 
 
-
 @Component ({
   selector: 'app-feed',
   templateUrl: 'feed.html',
@@ -33,14 +32,24 @@ export class FeedPage {
     }
     )
   }
+      // MotraDetalhes(filme){
+        
+      //   let param:NavigationExtras={queryParams:{id: filme.id,title:filme.title}}
+      //   this.navCtrl.navigateForward(["movie-detail"],param);
+
       MotraDetalhes(filme){
-        console.log(filme);
-        let param:NavigationExtras={queryParams:{id: filme.id,title:filme.title}}
-        this.navCtrl.navigateForward(["movie-detail"],param);
+
+        let param: NavigationExtras = {
+          queryParams:{ id: filme.id,title:filme.title
+            
+          }
+        };
+        this.navCtrl.navigateForward(["movie-detail"], param);
+    
+    
 
       }
 
   }
-
 
 
