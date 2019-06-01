@@ -1,3 +1,4 @@
+import { DatabaseService } from './database.service';
 import { Http, HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,7 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovieDetailPageModule } from './movie-detail/movie-detail.module';
-
+import { SQLite } from '@ionic-native/sqlite/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,8 +20,12 @@ import { MovieDetailPageModule } from './movie-detail/movie-detail.module';
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
+    DatabaseService,
+
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], 
 })
 export class AppModule {}
